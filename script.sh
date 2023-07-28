@@ -7,6 +7,6 @@ curl -Lo ./snyk "https://github.com/snyk/snyk/releases/download/v1.1196.0/snyk-l
         echo "----------Authenticating Snyk-----------"
          ./snyk auth $SNYK_TOKEN
         echo "----------Snyk Scanning-----------"
-         ./snyk test --all-projects -d
+         ./snyk test --all-projects -d --detection-depth=5
          
         
